@@ -2,7 +2,9 @@ import ldap
 
 # Connection
 con = ldap.initialize('ldap://openldap.default.svc.cluster.local')
-con.simple_bind_s("cn=admin,dc=local,dc=io", "admin")
+# con.simple_bind_s("cn=admin,dc=local,dc=io", "admin")
+con.simple_bind_s("cn=admin,dc=local,dc=io", os.environ["password"])
+
 
 # Properties
 uid = ["user1", "user2", "user3", "user4", "user2"]
