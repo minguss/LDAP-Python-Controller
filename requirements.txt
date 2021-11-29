@@ -2,5 +2,5 @@ docker==3.7.2
 docker-pycreds==0.4.0
 kubernetes==9.0.0
 ldap-simple-search==0.1.2
-python-ldap==3.2.0
+python-ldap==3.4.0
 python3-ldap==0.9.8.4
